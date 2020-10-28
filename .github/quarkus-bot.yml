@@ -5,4 +5,4 @@ triage:
     notify: [gsmet]
   - labels: [area/validator]
     titleBody: "validator"
-    notify: [gsmet]
+    notify: [gsmet, 'unknown-user']
