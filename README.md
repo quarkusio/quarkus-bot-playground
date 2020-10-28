@@ -1,3 +1,3 @@
 # quarkus-bot-playground
 
-Plop 7
+Plop 8
