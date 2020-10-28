@@ -1,0 +1,9 @@
+triage:
+- labels: [area/persistence]
+  title: "(?i).*persistence.*"
+  description: "(?i).*persistence.*"
+  notify: [gsmet]
+- labels: [area/validator]
+  title: "(?i).*validator.*"
+  description: "(?si).*validator.*"
+  notify: [gsmet]
