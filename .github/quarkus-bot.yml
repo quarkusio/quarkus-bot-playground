@@ -1,10 +1,8 @@
 triage:
   rules:
   - labels: [area/persistence]
-    title: "(?i).*persistence.*"
-    body: "(?i).*persistence.*"
+    titleBody: "persistence"
     notify: [gsmet]
   - labels: [area/validator]
-    title: "(?i).*validator.*"
-    body: "(?si).*validator.*"
+    titleBody: "validator"
     notify: [gsmet]
