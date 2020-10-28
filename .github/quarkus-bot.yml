@@ -3,6 +3,10 @@ triage:
   - labels: [area/persistence]
     titleBody: "persistence"
     notify: [gsmet]
+    directories:
+    - 'extensions/hibernate-orm/'
   - labels: [area/validator]
     titleBody: "validator"
-    notify: [gsmet, 'unknown-user']
+    notify: [gsmet, 'unknown-user-1234']
+    directories:
+    - 'extensions/hibernate-validator/'
