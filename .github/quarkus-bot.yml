@@ -56,7 +56,7 @@ triage:
         - extensions/hibernate-reactive
     - labels: [area/hibernate-orm, area/persistence]
       expression: |
-              titleBody.match(/hibernate/i)
+              titleBoy.match(/hibernate/i)
               && !titleBody.match(/hibernate.validator/i)
               && !titleBody.match(/hibernate.search/i)
       notify: [gsmet, Sanne]
