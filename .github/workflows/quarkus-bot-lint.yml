@@ -1,0 +1,28 @@
+name: quarkus-bot.yml lint
+
+on:
+  push:
+    paths:
+      - '.github/quarkus-bot.yml'
+  pull_request:
+    paths:
+      - '.github/quarkus-bot.yml'
+
+jobs:
+  ci-sanity-check:
+    name: "CI Sanity Check"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: sleep 30
+  lint:
+    name: "quarkus-bot.yml validation"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install yamllint
+        shell: bash
+        run: sudo apt-get install -y yamllint
+      - name: run yamllint
+        shell: bash
+        run: yamllint .github/quarkus-bot.yml
