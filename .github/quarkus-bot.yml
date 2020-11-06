@@ -75,14 +75,17 @@ triage:
     - labels: [area/hibernate-search]
       titleBody: hibernate search
       notify: [gsmet, yrodiere]
-      notifyInPullRequest: true
       directories:
-        - extensions/hibernate-search-elasticsearch/
-        - integration-tests/hibernate-search-elasticsearch/
+        - extensions/hibernate-search-orm-elasticsearch/
+        - integration-tests/hibernate-search-orm-elasticsearch/
         - extensions/elasticsearch-rest-client/
+        - extensions/elasticsearch-rest-client-common/
     - labels: [area/elasticsearch]
       titleBody: elasticsearch
       notify: [gsmet, yrodiere, loicmathieu]
+      directories:
+        - extensions/elasticsearch
+        - integration-tests/elasticsearch
     - labels: [area/hibernate-validator]
       titleBody: hibernate validator
       notify: [gsmet]
