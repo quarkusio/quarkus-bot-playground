@@ -75,6 +75,7 @@ triage:
     - labels: [area/hibernate-search]
       titleBody: hibernate search
       notify: [gsmet, yrodiere]
+      notifyInPullRequest: true
       directories:
         - extensions/hibernate-search-elasticsearch/
         - integration-tests/hibernate-search-elasticsearch/
