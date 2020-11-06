@@ -25,4 +25,4 @@ jobs:
         run: sudo apt-get install -y yamllint
       - name: run yamllint
         shell: bash
-        run: yamllint .github/quarkus-bot.yml
+        run: yamllint -c .github/yamllint.conf .github/quarkus-bot.yml

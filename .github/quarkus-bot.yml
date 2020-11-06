@@ -55,7 +55,10 @@ triage:
       directories:
         - extensions/hibernate-reactive
     - labels: [area/hibernate-orm, area/persistence]
-      titleBody: hibernate.orm
+      expression: |
+              titleBody.match(/hibernate/i)
+              && !titleBody.match(/hibernate.validator/i)
+              && !titleBody.match(/hibernate.search/i)
       notify: [gsmet, Sanne]
       directories:
         - extensions/hibernate-orm/
@@ -252,7 +255,7 @@ triage:
         - extensions/redis-client/
         - integration-tests/redis-client/
     - labels: [area/arc]
-      titleBody: "(arc|cdi|injection)"
+      titleBody: "\\b(arc|cdi|injection)\\b"
       notify: [mkouba, manovotn]
       directories:
         - extensions/arc/
